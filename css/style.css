@@ -1073,6 +1073,7 @@ form label {
   font-family: "Sacramento", Arial, serif;
   color: #F14E95;
   font-size: 30px;
+  margin-bottom:1px;
 }
 .couple-half .groom, .couple-half .bride {
   float: left;
@@ -1112,11 +1113,13 @@ form label {
 }
 .couple-half .desc-groom {
   padding-right: 180px;
+  padding-top:3em;
   text-align: right;
 }
 .couple-half .desc-bride {
   padding-left: 180px;
   text-align: left;
+  padding-top:3em;
 }
 @media screen and (max-width: 480px) {
   .couple-half .groom, .couple-half .bride {
