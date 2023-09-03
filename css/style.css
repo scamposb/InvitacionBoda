@@ -998,15 +998,27 @@ form label {
 #fh5co-testimonial,
 #fh5co-services,
 #fh5co-started,
-#fh5co-footer,
 #fh5co-event,
 #fh5co-couple-story,
-#fh5co-couple,
 #fh5co-gallery,
 .fh5co-section {
   padding: 7em 0;
   clear: both;
 }
+
+#fh5co-couple{
+  padding-top: 7em;
+  clear: both;
+}
+
+.fh5co-couple{
+  padding-top: 2em;
+}
+
+#fh5co-footer{
+  padding-bottom: 3em;
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-testimonial,
   #fh5co-services,
@@ -1187,7 +1199,7 @@ form label {
 .fh5co-heading h2 {
   font-size: 60px;
   margin-bottom: 10px;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   /* font-weight: bold; */
   color: #790f3dcc;
   font-family: "Cookie", Arial, serif;
