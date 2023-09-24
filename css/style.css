@@ -298,6 +298,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-cover {
   background-size: cover;
     background-repeat: no-repeat;
+    background-position: center !important;
     position: relative;
 }
 
@@ -305,7 +306,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media (max-width: 768px) {
   .fh5co-cover {
     height: 800px;
-    background-image:url(../images/img_bg_2_mobile.jpg);
+    background-image:url(../images/img_bg_mobile_color.jpg);
   }
 }
 
@@ -352,6 +353,7 @@ h1, h2, h3, h4, h5, h6, figure {
   .fh5co-cover .display-t,
   .fh5co-cover .display-tc {
     height: 600px;
+    margin-top: 50px;
   }
 }
 .fh5co-cover.fh5co-cover-sm {
@@ -412,7 +414,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   #fh5co-counter,
   #fh5co-event {
-    height: 800px;
+    height: 1150px;
   }
   #fh5co-counter .display-t,
   #fh5co-counter .display-tc,
@@ -878,7 +880,7 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 50px;
   }
 }
 #fh5co-header .display-tc h2,
@@ -892,7 +894,7 @@ form label {
   #fh5co-header .display-tc h2,
   #fh5co-counter .display-tc h2,
   .fh5co-cover .display-tc h2 {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 #fh5co-header .display-tc .btn,
@@ -958,13 +960,19 @@ form label {
   margin-bottom: 2em;
 }
 
+@media (max-width: 768px) {
+  .simply-countdown {
+    margin-top: 140px;
+  }
+}
+
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(121, 15, 61, 0.8);
-  margin: 0 4px;
+  background: rgba(121, 15, 61, 0.4);
+  margin: 15px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1891,4 +1899,8 @@ form label {
     margin-right: auto;
     width: 50%;
   }
+}
+
+.mt-personalized {
+  margin-top: 9em !important;
 }
