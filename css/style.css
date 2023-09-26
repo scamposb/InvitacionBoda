@@ -1901,6 +1901,8 @@ form label {
   }
 }
 
-.mt-personalized {
-  margin-top: 9em !important;
+@media screen and (max-width: 460px) { 
+  .mt-personalized {
+    margin-top: 9em !important;
+  }
 }
