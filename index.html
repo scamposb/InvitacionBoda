@@ -45,22 +45,10 @@
 	<script src="https://kit.fontawesome.com/3a83f3b1ca.js" crossorigin="anonymous"></script>
 
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-	<script src="js/langs.js"></script>
 
 	</head>
 	<body>
-	<script>
-		const urlParams = new URLSearchParams(window.location.search);
-		const lang = urlParams.get('lang');
-		if (lang !== "fr"){
-			lang = "es"
-		}
-		if (lang === "fr"){
-			location.replace("francais.html");
-		}
-	</script>
 	<div class="fh5co-loader"></div>
-	<div id="page">
 	<header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
@@ -295,8 +283,6 @@
 		</div>
 	</div>
 
-	<script>}</script>
-
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 			<div class="row copyright">
@@ -345,7 +331,11 @@
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
         month: d.getMonth() + 1,
-        day: d.getDate()
+        day: d.getDate(),
+		hours: d.getHours(),
+		minutes: d.getMinutes(),
+		seconds: d.getSeconds(),
+		enableUtc: false,
     });
 
     //jQuery example
