@@ -162,6 +162,20 @@
             parameters.seconds
         );
 
+
+        var lang;
+        var actualURL = ""+window.location;
+        
+        if (actualURL.endsWith("francais.html")){
+            parameters.words = {
+                days: 'dié',
+                hours: 'heure',
+                minutes: 'minute',
+                seconds: 'seconde',
+                pluralLetter: 's'
+            }
+        }        
+
         if (parameters.enableUtc) {
             targetDate = new Date(
                 targetTmpDate.getUTCFullYear(),
