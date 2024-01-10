@@ -168,7 +168,7 @@
         
         if (actualURL.endsWith("francais.html")){
             parameters.words = {
-                days: 'dié',
+                days: 'jour',
                 hours: 'heure',
                 minutes: 'minute',
                 seconds: 'seconde',
@@ -228,19 +228,19 @@
                 }
 
                 if (parameters.plural) {
-                    dayWord = days > 1
+                    dayWord = days > 1 || days == 0
                         ? parameters.words.days + parameters.words.pluralLetter
                         : parameters.words.days;
 
-                    hourWord = hours > 1
+                    hourWord = hours > 1 || hours == 0
                         ? parameters.words.hours + parameters.words.pluralLetter
                         : parameters.words.hours;
 
-                    minuteWord = minutes > 1
+                    minuteWord = minutes > 1 || minutes == 0
                         ? parameters.words.minutes + parameters.words.pluralLetter
                         : parameters.words.minutes;
 
-                    secondWord = seconds > 1
+                    secondWord = seconds > 1 || seconds == 0
                         ? parameters.words.seconds + parameters.words.pluralLetter
                         : parameters.words.seconds;
 
