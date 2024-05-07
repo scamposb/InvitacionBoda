@@ -1911,3 +1911,8 @@ form label {
 .timeline-heading{
   text-align:center;
 }
+
+.blurry-text {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
